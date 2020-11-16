@@ -8,21 +8,23 @@ This repository is to help engineers to generate table ddl from
 
 To run this on your local machine, you will need to have to configure aws credential on your local computer.
 
-[AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+### Dependency
+Please setup [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) on your local machine.
 
-Start
+---
+### Start
 ```
 python generate_specific_table_ddl.py
 ```
 
-Information Input
+### Information Input
 ```
 > Enter Database Name temp
 > Enter Table Name temp
 > Enter Query Output Bucket Name Athena Query Output S3 Bucket
 ```
 
-Results
+### Results
 ```
 Execution ID: bla-bla-bla
 QUEUED
