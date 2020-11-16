@@ -4,12 +4,11 @@ import pandas as pd
 
 class QueryAthena:
 
-    def __init__(self, query, database, query_output_bucket, region='ap-northeast-2'):
+    def __init__(self, query, database, query_output_bucket):
         self.database = database
         self.folder = 'temp/ddl/'
         self.bucket = query_output_bucket
         self.s3_output =  's3://' + self.bucket + '/' + self.folder
-        self.region_name = region
         self.query = query
 
     def load_conf(self, q):
